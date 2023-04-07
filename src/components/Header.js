@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { AppBar, Tab, Tabs, Toolbar, Typography } from "@mui/material";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
+
 import { NavLink } from "react-router-dom";
 function Header() {
   const [value, setValue] = useState();
   return (
     <div>
-      <AppBar sx={{ backgroundColor: "#232F3D" }} position="sticky">
+      <AppBar sx={{ backgroundColor: "#233F3D" }} position="sticky">
         <Toolbar>
-          <Typography>
-            <LibraryBooksIcon />
-          </Typography>
+          <NavLink to="/" style={{ color: "white" }}>
+            <Typography>
+              <LocalLibraryIcon />
+            </Typography>
+          </NavLink>
           <Tabs
             sx={{ ml: "auto" }}
             textColor="inherit"

@@ -2,6 +2,7 @@
   "name": "book-store",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://book-self-bb23.onrender.com",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
